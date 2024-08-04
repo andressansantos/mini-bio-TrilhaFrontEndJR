@@ -1,0 +1,164 @@
+@charset "UTF-8";
+@media (max-width: 768px) {
+  .name {
+    font-size: 20px;
+  }
+  .description {
+    font-size: 14px;
+  }
+  img {
+    width: 30%; /* Ajustar a largura da imagem em telas menores */
+    height: auto; /* Manter a proporção da imagem */
+  }
+  .container, .container2 {
+    width: 95%; /* Ajusta a largura dos containers em telas menores */
+  }
+  .tech-icons {
+    justify-content: center; /* Centraliza os ícones horizontalmente em telas menores */
+  }
+  .tech-icons i {
+    font-size: 10px; /* Reduz o tamanho dos ícones em telas menores */
+  }
+}
+body {
+  background-color: rgb(7, 7, 7);
+  font-family: "Gill Sans", sans-serif;
+  color: rgb(70, 67, 67);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+}
+
+main {
+  flex: 1; /* para que o conteúdo principal ocupe o espaço restante disponível. */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center content horizontally */
+}
+
+h1, h2 {
+  color: #e53939;
+}
+
+.container {
+  padding: 20px; /* substituição da variável $padding-size */
+  background-color: rgb(255, 255, 255);
+  border: 2px solid #e53939;
+  border-radius: 15px; /* substituição da variável $border-radius */
+  width: 80%; /* largura para o container */
+  max-width: 1000px; /* largura máxima */
+  margin: 20px 0;
+  position: relative; /* Adicionado para posicionamento absoluto do botão */
+}
+
+.container2 {
+  padding: 20px; /* substituição da variável $padding-size */
+  background-color: rgb(255, 255, 255);
+  border: 2px solid #e53939;
+  border-radius: 15px; /* substituição da variável $border-radius */
+  width: 80%; /* largura para o container */
+  max-width: 1000px; /* largura máxima */
+  margin: 5px 0;
+}
+
+img {
+  border-radius: 50%;
+  width: 17%;
+  height: 17%;
+}
+
+footer {
+  background-color: #333; /* substituição da variável $footer-bg-color */
+  color: #fff; /* substituição da variável $footer-text-color */
+  text-align: center;
+  padding: 5px 0;
+  position: relative;
+  width: 100%;
+}
+
+.name {
+  font-size: 24px;
+  margin: 10px 0;
+}
+
+.description {
+  font-size: 16px;
+  color: #666;
+}
+
+.like-button {
+  background-color: #8b73e0;
+  border: none;
+  color: #fff;
+  padding: 10px 20px;
+  margin-top: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute; /* Posiciona o botão de forma absoluta */
+  top: 20px; /* Ajuste conforme necessário */
+  right: 20px; /* Mantém o botão à direita */
+}
+
+.like-icon {
+  margin-right: 5px;
+}
+
+.like-button:hover {
+  background-color: #d15f5f;
+}
+
+/* Estilizar os ícones das tecnologias */
+.tech-icons {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* Espaçamento entre os ícones */
+}
+
+.tech-icons i {
+  font-size: 36px; /* Tamanho dos ícones */
+  color: #333;
+}
+
+.tech-icons i:hover {
+  color: #e53939; /* Cor ao passar o mouse sobre o ícone */
+}
+
+/* Estilizar o contêiner que agrupa o nome e o ícone da idade */
+.name-age-container {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Espaço entre o nome e o ícone da idade */
+}
+
+/* Estilizar a idade */
+.age-reveal {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.age-reveal .age {
+  display: none; /* Esconder a idade inicialmente */
+  margin-left: 10px;
+  font-size: 18px;
+  color: #666;
+}
+
+.age-reveal:hover .age,
+.age-reveal:focus .age {
+  display: inline; /* Mostrar a idade ao passar o mouse ou focar */
+}
+
+#age-icon {
+  font-size: 24px;
+  color: #333;
+}
+
+#age-icon:hover {
+  color: #e53939; /* Cor ao passar o mouse sobre o ícone */
+}/*# sourceMappingURL=style.css.map */
